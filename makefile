@@ -1,9 +1,9 @@
 all: readme
 
-readme: README.md
-
+readme:
+	rm README.md
 	touch README.md
-	echo "Guessing game" >> README.md
+	echo "## Guessing game" >> README.md
 	date >> README.md
-	$num=$( cat guessinggame.sh | wc -l )
-	echo "Number of lines of code contained in guessinggame.sh is $num"	
+	printf "Number of lines of code contained in guessinggame.sh is " >> README.md
+	cat guessinggame.sh | wc -l >> README.md
