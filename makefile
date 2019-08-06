@@ -1,6 +1,6 @@
 all: readme
 
-readme:
+readme: guessinggame.sh
 	rm README.md
 	touch README.md
 	echo "## Guessing game" >> README.md
