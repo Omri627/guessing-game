@@ -4,8 +4,8 @@ readme:
 	rm README.md
 	touch README.md
 	echo "## Guessing game" >> README.md
-	echo ""
+	echo "" >> README.md
 	date >> README.md
-	echo ""
+	echo "" >> README.md
 	printf "Number of lines of code contained in guessinggame.sh is " >> README.md
 	cat guessinggame.sh | wc -l >> README.md
